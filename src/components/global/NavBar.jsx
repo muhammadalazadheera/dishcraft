@@ -1,12 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import SignInLink from "./SignInLink";
-import { auth } from "@/auth";
 import SignOutLink from "./SignOutLink";
 
-async function NavBar() {
-  const session = await auth();
-  console.log(session);
+function NavBar({ session }) {
   return (
     <div className="navbar p-0 bg-base-100">
       <div className="navbar-start">

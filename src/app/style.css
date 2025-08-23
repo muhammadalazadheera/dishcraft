@@ -71,3 +71,7 @@ body {
     -webkit-text-stroke: 2px #b75d69;
     /* Width and color of the outline */
 }
+
+#add-dish-form label {
+    color: #0081a7;
+}

@@ -2,9 +2,9 @@
 import { signIn, signOut } from "@/auth"
 
 export const login = async () => {
-    await signIn('google', {redirectTo: 'http://localhost:3000/dishes'})
+    await signIn('google', {redirectTo: 'https://dishcraft-sigma.vercel.app/dishes'})
 }
 
 export const logout = async () => {
-    await signOut({redirectTo: 'http://localhost:3000/dishes'})
+    await signOut({redirectTo: 'https://dishcraft-sigma.vercel.app/dishes'})
 }

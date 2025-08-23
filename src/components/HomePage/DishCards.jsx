@@ -7,7 +7,7 @@ const DishCards = () => {
 
   useEffect(() => {
     const fetchDishes = async () => {
-      const response = await fetch("http://localhost:5000/popular-dishes");
+      const response = await fetch("https://dishcraft-ss.vercel.app/popular-dishes");
       const data = await response.json();
       console.log(data)
       setDishes(data);

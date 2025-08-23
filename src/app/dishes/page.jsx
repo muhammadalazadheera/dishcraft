@@ -4,7 +4,7 @@ import Link from "next/link";
 import HomeLayout from "../HomeLayout";
 
 async function AllDishes() {
-  const response = await axios.get("http://localhost:5000/dishes");
+  const response = await axios.get("https://dishcraft-ss.vercel.app/dishes");
   const dishes = await response.data;
   return (
     <HomeLayout>

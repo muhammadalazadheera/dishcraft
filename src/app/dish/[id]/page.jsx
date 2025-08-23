@@ -4,7 +4,7 @@ import axios from "axios";
 
 async function DishDetails({ params }) {
   const { id } = await params;
-  const response = await axios.get(`http://localhost:5000/dish/${id}`);
+  const response = await axios.get(`https://dishcraft-ss.vercel.app/dish/${id}`);
   const dish = await response.data;
   return (
     <HomeLayout>
